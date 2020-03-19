@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .sidepanel{
+        width: 15%;
+        height: 100%;
+        background-color:#44749d;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        transition: width 1s;
+       
+    }
+    
+    .main{
+        margin-left: 0px;
+        width: 80%;
+        float: left;
+    }
+
+    .main2{
+        margin-left: 0px;
+        width: 53%;
+        float: left;
+    }
+
+    .kontenkanan{
+        margin-left: 60%;
+        width: 40%;
+        height: 100%;
+    }
+
+    .kontenkanan2{
+        margin-left: 60%;
+        width: 15%;
+        height: 100%;
+    }
+
+    .kotakbesar{
+        margin-left: 0px;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 6.8%;
+        float: left;
+    }
+
+
+    
+    
+    .sidepanelclose{
+        width: 0px;
+        height: 100%;
+        background-color: #44749d;
+        position: fixed;
+        overflow: auto;
+        top: 0px;
+        left: 0px;
+        transition: width 1s;
+    }
+    
+    .mainopen{
+        margin-left: 200px;
+        width: 53%;
+    }
+
+    .close{
+        top: 5%;
+        background-color: #c6d4e1;
+    }
+
+   
+.kotak1{
+
+width : 15%;
+height: 80px;
+float: left;
+margin-left: 20px;
+background-color: #c6d4e1;
+}
+
+.kotak2{
+
+width : 15%;
+height: 80px;
+float: left;
+margin-left: 20px;
+background-color: #c6d4e1;
+}
+
+.kotak3{
+
+width : 15%;
+height: 80px;
+float: left;
+margin-left: 20px;
+background-color: #c6d4e1;
+}
+
+.kotak4{
+
+width : 15%;
+height: 80px;
+float: left;
+margin-left: 20px;
+background-color: #c6d4e1;
+}
+
+.kotak5{
+
+width : 60%;
+height: 600px;
+margin-left: 0px;
+background-color: #ebe7e0;
+}
+
+.kotak6{
+
+width : 60%;
+height: 400px;
+margin-left: 0px;
+background-color: #ebe7e0;
+}
+
+.kotak7{
+
+width : 81%;
+height: 560px;
+background-color: #c6d4e1;
+}
+
+.kotak8{
+
+width : 81%;
+height: 300px;
+background-color: #c6d4e1;
+}
+
+
+.tombol{
+    width: 5%;
+    float: left;
+}
+
+.kotak1:hover{background-color: #1976d2;}
+.kotak2:hover{background-color: #1976d2;}
+.kotak3:hover{background-color: #1976d2;}
+.kotak4:hover{background-color: #1976d2;}
+
+
+
+  
+
+
+  
+    
+    </style>
+<script>
+
+    function openNav(){
+                document.getElementById('panelkiri').className="sidepanel";
+                document.getElementById('panelutama').className="mainopen";
+                document.getElementById('kotakkanan').className="kontenkanan2";
+                
+            }
+    
+    function closeNav(){
+        document.getElementById('panelkiri').className="sidepanelclose";
+        document.getElementById('kotakkanan').className="kontenkanan";
+        document.getElementById('panelutama').className="main";
+    }
+    </script>
+
+<body>
+    
+    <div class="sidepanelclose" id="panelkiri">
+        <div class="close" id="close">
+            <span style="font-size: 30px;cursor: pointer;" onclick="closeNav()">x</span>
+        </div>
+        
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact</li>
+
+    </div>
+
+    <div class="main" id="panelutama">
+    <div class="tombol">
+        <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776</span>
+        
+    </div> 
+
+
+    <div class="kotakatas">
+
+
+    <div class="kotak1">
+
+    </div>
+
+    <div class="kotak2" >
+
+    </div>
+
+    <div class="kotak3" >
+
+    </div>
+
+    <div class="kotak4" >
+
+    </div>
+
+    </div>
+
+
+    <div class="kotakbesar">
+
+        <div class="kotak7" >
+    
+        </div>
+        <br>
+
+        <div class="kotak8" >
+    
+        </div>
+    
+    </div>
+
+
+
+    
+
+
+    </div>
+
+    <div class="kontenkanan" id="kotakkanan">
+
+        <div class="kotak5" >
+    
+        </div>
+        <br>
+
+        <div class="kotak6" >
+    
+        </div>
+    
+    </div>
+
+   
+
+    
+
+
+
+
+    
+
+       
+  
+
+</body>
+</html>
